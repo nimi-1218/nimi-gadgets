@@ -1,1061 +1,369 @@
 /* =========================================================
-   NIMI GADGETS — PREMIUM PURPLE STYLE
+   NIMI GADGETS
+   PRODUCT SELECTION + ASK FOR PRICE
 ========================================================= */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #0b0712;
-    color: #ffffff;
-    overflow-x: hidden;
-}
-
-:root {
-    --purple: #7c3aed;
-    --bright-purple: #a855f7;
-    --dark-purple: #4c1d95;
-    --deep-purple: #160b27;
-    --card: #211334;
-    --model: #302044;
-    --model-hover: #482b67;
-    --gold: #f5c542;
-    --white: #ffffff;
-    --gray: #b8afc4;
-}
-
-
-/* =========================================================
-   HEADER
-========================================================= */
-
-.header {
-    width: 100%;
-    background: linear-gradient(135deg, #160b27, #32135f);
-    border-bottom: 2px solid var(--purple);
-}
-
-.top-header {
-    min-height: 260px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-    padding: 45px 7%;
-}
-
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
-
-.logo-icon {
-    width: 145px;
-    height: 145px;
-    border: 5px solid var(--gold);
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 42px;
-    font-weight: 900;
-    box-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
-}
-
-.logo-text h1 {
-    font-size: 65px;
-    letter-spacing: 7px;
-    line-height: 0.9;
-}
-
-.logo-text h2 {
-    font-size: 45px;
-    letter-spacing: 7px;
-    color: var(--bright-purple);
-}
-
-.logo-text p {
-    margin-top: 15px;
-    color: var(--gold);
-    font-size: 15px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-.header-tagline {
-    border-left: 2px solid var(--gold);
-    padding-left: 40px;
-}
-
-.header-tagline p {
-    font-size: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
+document.addEventListener("DOMContentLoaded", function () {
 
-/* =========================================================
-   NAVIGATION
-========================================================= */
-
-.navbar {
-    min-height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 7%;
-    background: #100719;
-    border-top: 1px solid rgba(168, 85, 247, 0.3);
-    border-bottom: 2px solid var(--purple);
-}
-
-.nav-logo {
-    font-size: 25px;
-    font-weight: 900;
-}
-
-.nav-logo span {
-    color: var(--bright-purple);
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 35px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: 0.3s;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-    color: var(--gold);
-}
-
-.nav-icons {
-    display: flex;
-    gap: 20px;
-    font-size: 23px;
-}
-
-.search-icon,
-.cart-icon {
-    cursor: pointer;
-}
-
-
-/* =========================================================
-   HERO
-========================================================= */
-
-.hero {
-    min-height: 560px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 70px 10%;
-    background:
-        radial-gradient(circle at 80% 50%, #3b1764 0%, transparent 35%),
-        linear-gradient(135deg, #0b0712, #170b29);
-}
-
-.hero-content {
-    width: 48%;
-}
-
-.gold-line {
-    width: 75px;
-    height: 4px;
-    background: var(--gold);
-    margin-bottom: 25px;
-}
-
-.small-title {
-    color: var(--bright-purple);
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
-}
-
-.hero-content h2 {
-    font-size: 58px;
-    line-height: 1.05;
-    margin-bottom: 25px;
-}
-
-.hero-description {
-    color: var(--gray);
-    font-size: 18px;
-    line-height: 1.7;
-    max-width: 520px;
-    margin-bottom: 35px;
-}
-
-.hero-button {
-    display: inline-block;
-    background: linear-gradient(135deg, var(--purple), var(--bright-purple));
-    color: white;
-    text-decoration: none;
-    padding: 16px 35px;
-    border-radius: 8px;
-    font-weight: bold;
-    border: 1px solid var(--gold);
-    transition: 0.3s;
-}
-
-.hero-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.4);
-}
-
-.hero-image {
-    width: 45%;
-    display: flex;
-    justify-content: center;
-}
-
-.hero-image img {
-    width: 100%;
-    max-width: 500px;
-    height: 400px;
-    object-fit: contain;
-    filter: drop-shadow(0 20px 30px rgba(168, 85, 247, 0.3));
-}
-
-
-/* =========================================================
-   PRODUCTS SECTION
-========================================================= */
-
-.products-section {
-    padding: 80px 7%;
-    background: #0b0712;
-}
-
-.section-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
-    margin-bottom: 55px;
-}
-
-.section-title h2 {
-    font-size: 30px;
-    letter-spacing: 2px;
-}
-
-.title-line {
-    width: 70px;
-    height: 2px;
-    background: var(--gold);
-}
-
-.star {
-    color: var(--gold);
-    font-size: 22px;
-}
-
-
-/* =========================================================
-   PRODUCT GRID
-========================================================= */
-
-.products-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1250px;
-    margin: auto;
-}
-
-
-/* =========================================================
-   PRODUCT CARD
-========================================================= */
-
-.product-card {
-    background: linear-gradient(145deg, #1b1028, #28143d);
-    border: 1px solid #63339a;
-    border-radius: 18px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
-    transition: 0.35s;
-}
-
-.product-card:hover {
-    transform: translateY(-8px);
-    border-color: var(--bright-purple);
-    box-shadow: 0 18px 45px rgba(124, 58, 237, 0.25);
-}
-
-.new-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(135deg, var(--purple), var(--bright-purple));
-    color: white;
-    padding: 10px 22px;
-    font-size: 12px;
-    font-weight: bold;
-    z-index: 2;
-}
-
-
-/* =========================================================
-   PRODUCT IMAGE
-========================================================= */
-
-.product-image {
-    height: 280px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    background: #160d22;
-}
-
-.product-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: 0.4s;
-}
-
-.product-card:hover .product-image img {
-    transform: scale(1.05);
-}
-
-
-/* =========================================================
-   PRODUCT INFORMATION
-========================================================= */
-
-.product-info {
-    text-align: center;
-    padding: 22px;
-}
-
-.product-info h3 {
-    font-size: 21px;
-    margin-bottom: 15px;
-    color: white;
-}
-
-.category-description {
-    color: var(--gray);
-    margin-bottom: 15px;
-}
-
-
-/* =========================================================
-   MODEL LIST
-   THIS IS THE BOX YOU WANTED CHANGED FROM WHITE
-========================================================= */
-
-.model-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 9px;
-    margin: 18px 0 22px;
-}
-
-.model-list span {
-    display: block;
-    padding: 11px 8px;
-    background: var(--model);
-    color: #f4ecff;
-    border: 1px solid #63339a;
-    border-radius: 7px;
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.25s;
-}
-
-.model-list span:hover {
-    background: var(--model-hover);
-    border-color: var(--bright-purple);
-    color: var(--gold);
-    transform: translateY(-2px);
-}
-
-
-/* =========================================================
-   SELECTED PHONE
-========================================================= */
-
-.model-list span.selected {
-    background: linear-gradient(
-        135deg,
-        var(--purple),
-        var(--bright-purple)
-    );
-
-    color: white;
-
-    border-color: var(--gold);
-
-    box-shadow:
-        0 0 0 2px rgba(245, 197, 66, 0.25),
-        0 5px 15px rgba(124, 58, 237, 0.35);
-
-    transform: scale(1.03);
-}
-
-
-/* =========================================================
-   ASK FOR PRICE BUTTON
-========================================================= */
-
-.buy-now,
-.ask-price,
-.buy-button {
-    background: linear-gradient(
-        135deg,
-        var(--purple),
-        var(--bright-purple)
-    );
-
-    color: white;
-
-    border: 1px solid var(--gold);
-
-    border-radius: 7px;
-
-    padding: 13px 25px;
-
-    font-size: 14px;
-
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-
-    width: 100%;
-}
-
-.buy-now:hover,
-.ask-price:hover,
-.buy-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(168, 85, 247, 0.35);
-}
-
-
-/* =========================================================
-   ABOUT
-========================================================= */
-
-.about-section {
-    padding: 90px 10%;
-    background: #13091f;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 70px;
-    align-items: center;
-}
-
-.about-content h2 {
-    font-size: 42px;
-    color: var(--bright-purple);
-    margin: 15px 0 25px;
-}
-
-.about-content > p:not(.small-title) {
-    color: var(--gray);
-    line-height: 1.8;
-    font-size: 17px;
-    margin-bottom: 20px;
-}
-
-.about-features {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.about-feature {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    padding: 22px;
-    border-left: 4px solid var(--purple);
-    background: #211334;
-    border-radius: 8px;
-}
-
-.about-feature span {
-    width: 45px;
-    height: 45px;
-    background: var(--purple);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-}
-
-.about-feature h3 {
-    margin-bottom: 5px;
-}
-
-.about-feature p {
-    color: var(--gray);
-}
-
-
-/* =========================================================
-   CONTACT
-========================================================= */
-
-#contact {
-    padding: 80px 8%;
-    background: #0b0712;
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-#contact > p {
-    color: var(--gray);
-    margin-bottom: 40px;
-}
-
-.contact-info {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.contact-item {
-    background: #211334;
-    border: 1px solid #63339a;
-    border-radius: 10px;
-    padding: 25px;
-}
-
-.contact-item h3 {
-    color: var(--bright-purple);
-    margin-bottom: 10px;
-}
-
-.contact-item p {
-    color: var(--gray);
-}
-
-
-/* =========================================================
-   TRUST
-========================================================= */
-
-.trust-section {
-    background: #160d22;
-    border-top: 1px solid #63339a;
-    border-bottom: 1px solid #63339a;
-    max-width: 1200px;
-    margin: auto;
-    min-height: 110px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.trust-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px;
-    border-right: 1px solid #3b2750;
-}
-
-.trust-item:last-child {
-    border-right: none;
-}
-
-.trust-icon {
-    width: 50px;
-    height: 50px;
-    border: 2px solid var(--bright-purple);
-    color: var(--bright-purple);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.trust-item p {
-    color: var(--gray);
-    font-size: 13px;
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-.footer {
-    background: #07040b;
-    color: white;
-    padding: 50px 8%;
-    text-align: center;
-    border-top: 2px solid var(--purple);
-}
-
-.footer-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 25px;
-}
-
-.footer-ng {
-    width: 55px;
-    height: 55px;
-    border: 2px solid var(--gold);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 900;
-}
-
-.footer-logo p {
-    color: var(--gold);
-    font-size: 12px;
-}
-
-.copyright {
-    color: #888;
-    margin-bottom: 20px;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-}
-
-.social-links a {
-    color: var(--bright-purple);
-    text-decoration: none;
-}
-
-.social-links a:hover {
-    color: var(--gold);
-}
-
-
-/* =========================================================
-   WHATSAPP
-========================================================= */
-
-.whatsapp-button {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    width: 62px;
-    height: 62px;
-    border-radius: 50%;
-    background: #25d366;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 28px;
-    border: 3px solid white;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
-    z-index: 999;
-    transition: 0.3s;
-}
-
-.whatsapp-button:hover {
-    transform: scale(1.1);
-}
-
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 900px) {
-
-    .top-header {
-        flex-direction: column;
-        gap: 30px;
-        text-align: center;
+    /* =====================================================
+       SELECT PHONE / PRODUCT MODEL
+    ===================================================== */
+
+    const models = document.querySelectorAll(".model-option");
+
+    models.forEach(function (model) {
+
+        model.addEventListener("click", function () {
+
+            /* Find the product card this model belongs to */
+            const card = model.closest(".product-card");
+
+            if (!card) {
+                return;
+            }
+
+            /* Remove selection from other models
+               ONLY inside this product card */
+            const modelsInThisCard =
+                card.querySelectorAll(".model-option");
+
+            modelsInThisCard.forEach(function (item) {
+                item.classList.remove("selected");
+            });
+
+
+            /* Highlight the model that was clicked */
+            model.classList.add("selected");
+
+
+            /* Get the product category/name */
+            let category = "Gadget";
+
+            const title = card.querySelector("h3");
+
+            if (title) {
+                category = title.textContent.trim();
+            }
+
+
+            /* Get the selected model name */
+            const selectedModel =
+                model.textContent.trim();
+
+
+            /* Show selected model */
+            const selectedText =
+                card.querySelector(".selected-model");
+
+            if (selectedText) {
+                selectedText.textContent =
+                    "Selected: " + selectedModel;
+            }
+
+
+            /* Change ASK FOR PRICE button */
+            const button =
+                card.querySelector(".buy-now");
+
+            if (button) {
+                button.textContent =
+                    "ASK PRICE FOR " + selectedModel;
+            }
+
+
+            /* Store the selection on THIS card */
+            card.dataset.selectedModel = selectedModel;
+            card.dataset.selectedCategory = category;
+
+        });
+
+    });
+
+
+
+    /* =====================================================
+       ASK FOR PRICE
+    ===================================================== */
+
+    const priceButtons =
+        document.querySelectorAll(".buy-now");
+
+
+    priceButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            /* Find the card containing this button */
+            const card =
+                button.closest(".product-card");
+
+            if (!card) {
+                return;
+            }
+
+
+            /* Get the model selected in THIS card */
+            const selectedModel =
+                card.dataset.selectedModel;
+
+
+            const selectedCategory =
+                card.dataset.selectedCategory;
+
+
+            /* Make sure this card has a selection */
+            if (!selectedModel) {
+
+                alert(
+                    "Please select the phone/model you want first."
+                );
+
+                return;
+            }
+
+
+            /* =================================================
+               WHATSAPP MESSAGE
+            ================================================= */
+
+            const message =
+                "Hello Nimi Gadgets 👋\n\n" +
+                "I would like to ask for the price of:\n" +
+                "📱 " + selectedModel + "\n" +
+                "Category: " + selectedCategory + "\n\n" +
+                "Please send me the current price. Thank you.";
+
+
+            /* Nimi Gadgets WhatsApp number */
+            const whatsappNumber =
+                "2349166708683";
+
+
+            /* Encode the message properly */
+            const whatsappURL =
+                "https://wa.me/" +
+                whatsappNumber +
+                "?text=" +
+                encodeURIComponent(message);
+
+
+            /* Open WhatsApp */
+            window.open(
+                whatsappURL,
+                "_blank"
+            );
+
+        });
+
+    });
+
+
+
+    /* =====================================================
+       NAVIGATION
+    ===================================================== */
+
+    const navLinks =
+        document.querySelectorAll(".nav-links a");
+
+
+    navLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            navLinks.forEach(function (item) {
+                item.classList.remove("active");
+            });
+
+            link.classList.add("active");
+
+        });
+
+    });
+
+
+
+    /* =====================================================
+       SEARCH ICON
+    ===================================================== */
+
+    const searchIcon =
+        document.querySelector(".search-icon");
+
+
+    if (searchIcon) {
+
+        searchIcon.addEventListener("click", function () {
+
+            const search =
+                prompt(
+                    "What gadget are you looking for?"
+                );
+
+
+            if (!search) {
+                return;
+            }
+
+
+            const searchText =
+                search.toLowerCase();
+
+
+            let found = false;
+
+
+            models.forEach(function (model) {
+
+                if (
+                    model.textContent
+                        .toLowerCase()
+                        .includes(searchText)
+                ) {
+
+                    model.scrollIntoView({
+                        behavior: "smooth",
+                        block: "center"
+                    });
+
+
+                    found = true;
+
+                }
+
+            });
+
+
+            if (!found) {
+
+                alert(
+                    "Sorry, we couldn't find that model in our catalogue."
+                );
+
+            }
+
+        });
+
     }
 
-    .header-tagline {
-        border-left: none;
-        border-top: 2px solid var(--gold);
-        padding-left: 0;
-        padding-top: 20px;
+
+
+    /* =====================================================
+       FLOATING WHATSAPP BUTTON
+    ===================================================== */
+
+    const whatsappButton =
+        document.querySelector(".whatsapp-button");
+
+
+    if (whatsappButton) {
+
+        whatsappButton.addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+
+                const whatsappNumber =
+                    "2349166708683";
+
+
+                const message =
+                    "Hello Nimi Gadgets 👋\n\n" +
+                    "I would like to make an enquiry " +
+                    "about your gadgets.";
+
+
+                const whatsappURL =
+                    "https://wa.me/" +
+                    whatsappNumber +
+                    "?text=" +
+                    encodeURIComponent(message);
+
+
+                window.open(
+                    whatsappURL,
+                    "_blank"
+                );
+
+            }
+        );
+
     }
-
-    .products-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .about-section {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-info {
-        grid-template-columns: 1fr;
-    }
-
-    .trust-section {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 600px) {
-
-    .top-header {
-        padding: 35px 20px;
-    }
-
-    .logo-icon {
-        width: 100px;
-        height: 100px;
-        font-size: 30px;
-    }
-
-    .logo-text h1 {
-        font-size: 38px;
-    }
-
-    .logo-text h2 {
-        font-size: 28px;
-    }
-
-    .logo-text p {
-        font-size: 9px;
-    }
-
-    .header-tagline p {
-        font-size: 18px;
-    }
-
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-    }
-
-    .nav-links {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .nav-links a {
-        font-size: 11px;
-    }
-
-    .nav-icons {
-        display: none;
-    }
-
-    .hero {
-        flex-direction: column;
-        padding: 60px 25px;
-        text-align: center;
-    }
-
-    .hero-content {
-        width: 100%;
-    }
-
-    .hero-content h2 {
-        font-size: 40px;
-    }
-
-    .hero-image {
-        width: 100%;
-        margin-top: 30px;
-    }
-
-    .products-section {
-        padding: 60px 18px;
-    }
-
-    .products-container {
-        grid-template-columns: 1fr;
-    }
-
-    .product-image {
-        height: 280px;
-    }
-
-    .model-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .about-section {
-        padding: 60px 25px;
-    }
-
-    .trust-section {
-        grid-template-columns: 1fr;
-        margin: 0 20px;
-    }
-
-    .trust-item {
-        border-right: none;
-        border-bottom: 1px solid #3b2750;
-    }
-
-    .trust-item:last-child {
-        border-bottom: none;
-    }
-
-    .whatsapp-button {
-        right: 18px;
-        bottom: 18px;
-        width: 58px;
-        height: 58px;
-    }
-}
-
-/* =========================================================
+    /* =========================================================
    PAYMENT SECTION
 ========================================================= */
 
-.payment-section {
-    padding: 90px 20px;
-    background:
-        radial-gradient(
-            circle at center,
-            #32135f 0%,
-            #13091f 45%,
-            #0b0712 100%
-        );
-    text-align: center;
+const copyAccountBtn = document.getElementById("copyAccountBtn");
+const accountNumber = document.getElementById("accountNumber");
+
+if (copyAccountBtn && accountNumber) {
+
+    copyAccountBtn.addEventListener("click", function () {
+
+        const number = accountNumber.textContent.trim();
+
+        navigator.clipboard.writeText(number)
+            .then(function () {
+
+                copyAccountBtn.textContent =
+                    "✓ ACCOUNT NUMBER COPIED";
+
+                setTimeout(function () {
+
+                    copyAccountBtn.textContent =
+                        "📋 COPY ACCOUNT NUMBER";
+
+                }, 2500);
+
+            })
+            .catch(function () {
+
+                alert(
+                    "Account number: " + number
+                );
+
+            });
+
+    });
+
 }
 
-.payment-title p:first-child {
-    color: #a855f7;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 12px;
-}
-
-.payment-title h2 {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.payment-subtitle {
-    color: #b8afc4;
-    max-width: 600px;
-    margin: 0 auto 40px;
-    line-height: 1.7;
-}
-
-.payment-card {
-    max-width: 550px;
-    margin: auto;
-    padding: 35px;
-    background: linear-gradient(
-        145deg,
-        #211334,
-        #32174d
-    );
-    border: 1px solid #a855f7;
-    border-radius: 20px;
-    box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.5),
-        0 0 35px rgba(124, 58, 237, 0.15);
-}
-
-.payment-icon {
-    width: 65px;
-    height: 65px;
-    margin: 0 auto 20px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #7c3aed;
-    font-size: 30px;
-    border: 2px solid #f5c542;
-}
-
-.payment-card h3 {
-    font-size: 23px;
-    margin-bottom: 25px;
-}
-
-.payment-detail {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 17px;
-    margin-bottom: 10px;
-    background: #160d22;
-    border: 1px solid #63339a;
-    border-radius: 8px;
-    text-align: left;
-}
-
-.payment-detail span {
-    color: #b8afc4;
-    font-size: 13px;
-}
-
-.payment-detail strong {
-    color: white;
-    text-align: right;
-    font-size: 14px;
-}
-
-.account-number-box strong {
-    color: #f5c542;
-    font-size: 19px;
-    letter-spacing: 1px;
-}
-
-.copy-account-btn,
-.payment-whatsapp-btn {
-    width: 100%;
-    display: block;
-    padding: 15px;
-    margin-top: 15px;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 14px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.copy-account-btn {
-    color: white;
-    background: linear-gradient(
-        135deg,
-        #4c1d95,
-        #7c3aed
-    );
-    border: 1px solid #a855f7;
-}
-
-.copy-account-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(168, 85, 247, 0.3);
-}
-
-.payment-whatsapp-btn {
-    color: white;
-    background: #25d366;
-    border: 1px solid white;
-}
-
-.payment-whatsapp-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
-}
-
-.payment-note {
-    color: #9589a5;
-    font-size: 12px;
-    line-height: 1.6;
-    margin-top: 20px;
-}
-
-
-/* MOBILE PAYMENT */
-
-@media (max-width: 600px) {
-
-    .payment-section {
-        padding: 65px 18px;
-    }
-
-    .payment-title h2 {
-        font-size: 30px;
-    }
-
-    .payment-card {
-        padding: 25px 18px;
-    }
-
-    .payment-detail {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 7px;
-    }
-
-    .payment-detail strong {
-        text-align: left;
-        word-break: break-word;
-    }
-
-    .account-number-box {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .account-number-box strong {
-        font-size: 16px;
-    }
-}
 
 /* =========================================================
-   PHONE / MODEL BUTTONS
+   PAYMENT WHATSAPP
 ========================================================= */
 
-.model-option {
-    background: #000;
-    color: #fff;
-    border: 1px solid #333;
+const paymentWhatsappBtn =
+    document.getElementById("paymentWhatsappBtn");
+
+if (paymentWhatsappBtn) {
+
+    paymentWhatsappBtn.addEventListener(
+        "click",
+        function (event) {
+
+            event.preventDefault();
+
+            const message =
+                "Hello Nimi Gadgets 👋%0A%0A" +
+                "I've made a payment for my order.%0A" +
+                "I'm sending my payment receipt here for confirmation.";
+
+            const whatsappNumber = "2349166708683";
+
+            const whatsappURL =
+                "https://wa.me/" +
+                whatsappNumber +
+                "?text=" +
+                message;
+
+            window.open(whatsappURL, "_blank");
+
+        }
+    );
+
 }
 
-/* Hover */
-.model-option:hover {
-    background: #1a1a1a;
-    color: #fff;
-}
-
-/* Selected phone */
-.model-option.selected {
-    background: #d4af37;
-    color: #000;
-    border-color: #d4af37;
-}
+});
