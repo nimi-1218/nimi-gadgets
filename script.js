@@ -189,9 +189,9 @@ priceButtons.forEach(function (button) {
             .addEventListener("click", function () {
 
                 const whatsappURL =
-                    "https://wa.me/" +
+                    "https://api.whatsapp.com/send?phone=" +
                     whatsappNumber +
-                    "?text=" +
+                    "&text=" +
                     encodedMessage;
 
                 window.open(
