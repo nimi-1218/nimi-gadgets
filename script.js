@@ -81,84 +81,178 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    /* =====================================================
-       ASK FOR PRICE
-    ===================================================== */
+    /* =========================================================
+   ASK FOR PRICE
+========================================================= */
 
-    const priceButtons =
-        document.querySelectorAll(".buy-now");
-
-
-    priceButtons.forEach(function (button) {
-
-        button.addEventListener("click", function () {
-
-            /* Find the card containing this button */
-            const card =
-                button.closest(".product-card");
-
-            if (!card) {
-                return;
-            }
+const priceButtons =
+    document.querySelectorAll(".buy-now");
 
 
-            /* Get the model selected in THIS card */
-            const selectedModel =
-                card.dataset.selectedModel;
+priceButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+        const card =
+            button.closest(".product-card");
+
+        if (!card) {
+            return;
+        }
+
+        const selectedModel =
+            card.dataset.selectedModel;
+
+        const selectedCategory =
+            card.dataset.selectedCategory;
 
 
-            const selectedCategory =
-                card.dataset.selectedCategory;
+        /* Make sure a model was selected */
+        if (!selectedModel) {
+
+            alert(
+                "Please select the phone/model you want first."
+            );
+
+            return;
+        }
 
 
-            /* Make sure this card has a selection */
-            if (!selectedModel) {
+        /* =================================================
+           WHATSAPP MESSAGE
+        ================================================= */
 
-                alert(
-                    "Please select the phone/model you want first."
+        const message =
+            "Hello Nimi Gadgets 👋\n\n" +
+            "I would like to ask for the price of:\n" +
+            "📱 " + selectedModel + "\n" +
+            "Category: " + selectedCategory + "\n\n" +
+            "Please send me the current price. Thank you.";
+
+
+        const whatsappNumber =
+            "2349166708683";
+
+
+        const encodedMessage =
+            encodeURIComponent(message);
+
+
+        /* =================================================
+           SHOW WHATSAPP CHOICE
+        ================================================= */
+
+        const choice =
+            document.createElement("div");
+
+        choice.className =
+            "whatsapp-choice";
+
+
+        choice.innerHTML = `
+
+            <div class="whatsapp-choice-box">
+
+                <button class="close-whatsapp-choice">
+                    ✕
+                </button>
+
+                <h3>Choose WhatsApp</h3>
+
+                <p>
+                    How would you like to contact
+                    Nimi Gadgets?
+                </p>
+
+                <button class="whatsapp-option messenger">
+                    💬 WhatsApp
+                </button>
+
+                <button class="whatsapp-option business">
+                    💼 WhatsApp Business
+                </button>
+
+            </div>
+
+        `;
+
+
+        document.body.appendChild(choice);
+
+
+        /* =================================================
+           WHATSAPP MESSENGER
+        ================================================= */
+
+        choice
+            .querySelector(".messenger")
+            .addEventListener("click", function () {
+
+                const whatsappURL =
+                    "https://wa.me/" +
+                    whatsappNumber +
+                    "?text=" +
+                    encodedMessage;
+
+                window.open(
+                    whatsappURL,
+                    "_blank"
                 );
 
-                return;
+                choice.remove();
+
+            });
+
+
+        /* =================================================
+           WHATSAPP BUSINESS
+        ================================================= */
+
+        choice
+            .querySelector(".business")
+            .addEventListener("click", function () {
+
+                const whatsappURL =
+                    "https://wa.me/" +
+                    whatsappNumber +
+                    "?text=" +
+                    encodedMessage;
+
+                window.open(
+                    whatsappURL,
+                    "_blank"
+                );
+
+                choice.remove();
+
+            });
+
+
+        /* =================================================
+           CLOSE BUTTON
+        ================================================= */
+
+        choice
+            .querySelector(".close-whatsapp-choice")
+            .addEventListener("click", function () {
+
+                choice.remove();
+
+            });
+
+
+        /* Close when clicking outside */
+        choice.addEventListener("click", function (event) {
+
+            if (event.target === choice) {
+                choice.remove();
             }
-
-
-            /* =================================================
-               WHATSAPP MESSAGE
-            ================================================= */
-
-            const message =
-                "Hello Nimi Gadgets 👋\n\n" +
-                "I would like to ask for the price of:\n" +
-                "📱 " + selectedModel + "\n" +
-                "Category: " + selectedCategory + "\n\n" +
-                "Please send me the current price. Thank you.";
-
-
-            /* Nimi Gadgets WhatsApp number */
-            const whatsappNumber =
-                "2349166708683";
-
-
-            /* Encode the message properly */
-            const whatsappURL =
-                "https://wa.me/" +
-                whatsappNumber +
-                "?text=" +
-                encodeURIComponent(message);
-
-
-            /* Open WhatsApp */
-            window.open(
-                whatsappURL,
-                "_blank"
-            );
 
         });
 
     });
 
-
-
+});
     /* =====================================================
        NAVIGATION
     ===================================================== */
