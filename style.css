@@ -1,5 +1,6 @@
 /* =========================================================
    NIMI GADGETS — PREMIUM PURPLE STYLE
+   FONT SIZE REDUCED ONLY
 ========================================================= */
 
 * {
@@ -25,8 +26,8 @@ body {
     --dark-purple: #4c1d95;
     --deep-purple: #160b27;
     --card: #211334;
-    --model: #302044;
-    --model-hover: #482b67;
+    --model: #000000;
+    --model-hover: #1a1a1a;
     --gold: #f5c542;
     --white: #ffffff;
     --gray: #b8afc4;
@@ -44,25 +45,25 @@ body {
 }
 
 .top-header {
-    min-height: 260px;
+    min-height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 70px;
-    padding: 45px 7%;
+    gap: 50px;
+    padding: 35px 7%;
 }
 
 .logo-area {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
 }
 
 .logo-icon {
-    width: 145px;
-    height: 145px;
-    border: 5px solid var(--gold);
-    border-radius: 30px;
+    width: 110px;
+    height: 110px;
+    border: 4px solid var(--gold);
+    border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,32 +74,32 @@ body {
 }
 
 .logo-text h1 {
-    font-size: 42px;
-    letter-spacing: 7px;
+    font-size: 48px;
+    letter-spacing: 5px;
     line-height: 0.9;
 }
 
 .logo-text h2 {
-    font-size: 30px;
-    letter-spacing: 7px;
+    font-size: 34px;
+    letter-spacing: 5px;
     color: var(--bright-purple);
 }
 
 .logo-text p {
-    margin-top: 15px;
+    margin-top: 12px;
     color: var(--gold);
     font-size: 12px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .header-tagline {
     border-left: 2px solid var(--gold);
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
 .header-tagline p {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -109,7 +110,7 @@ body {
 ========================================================= */
 
 .navbar {
-    min-height: 75px;
+    min-height: 65px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -120,7 +121,7 @@ body {
 }
 
 .nav-logo {
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 900;
 }
 
@@ -131,7 +132,7 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 28px;
 }
 
 .nav-links a {
@@ -150,7 +151,7 @@ body {
 
 .nav-icons {
     display: flex;
-    gap: 20px;
+    gap: 18px;
     font-size: 20px;
 }
 
@@ -165,11 +166,11 @@ body {
 ========================================================= */
 
 .hero {
-    min-height: 560px;
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 70px 10%;
+    padding: 60px 10%;
     background:
         radial-gradient(circle at 80% 50%, #3b1764 0%, transparent 35%),
         linear-gradient(135deg, #0b0712, #170b29);
@@ -180,32 +181,32 @@ body {
 }
 
 .gold-line {
-    width: 75px;
-    height: 4px;
+    width: 65px;
+    height: 3px;
     background: var(--gold);
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .small-title {
     color: var(--bright-purple);
     font-size: 12px;
     font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
 }
 
 .hero-content h2 {
-    font-size: 42px;
+    font-size: 46px;
     line-height: 1.05;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .hero-description {
     color: var(--gray);
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.7;
     max-width: 520px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .hero-button {
@@ -213,10 +214,10 @@ body {
     background: linear-gradient(135deg, var(--purple), var(--bright-purple));
     color: white;
     text-decoration: none;
-    padding: 16px 35px;
+    padding: 13px 28px;
     border-radius: 8px;
+    font-size: 13px;
     font-weight: bold;
-    font-size: 14px;
     border: 1px solid var(--gold);
     transition: 0.3s;
 }
@@ -234,8 +235,8 @@ body {
 
 .hero-image img {
     width: 100%;
-    max-width: 500px;
-    height: 400px;
+    max-width: 450px;
+    height: 350px;
     object-fit: contain;
     filter: drop-shadow(0 20px 30px rgba(168, 85, 247, 0.3));
 }
@@ -246,7 +247,7 @@ body {
 ========================================================= */
 
 .products-section {
-    padding: 80px 7%;
+    padding: 65px 7%;
     background: #0b0712;
 }
 
@@ -254,17 +255,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 18px;
-    margin-bottom: 55px;
+    gap: 15px;
+    margin-bottom: 45px;
 }
 
 .section-title h2 {
-    font-size: 25px;
-    letter-spacing: 2px;
+    font-size: 26px;
+    letter-spacing: 1px;
 }
 
 .title-line {
-    width: 70px;
+    width: 60px;
     height: 2px;
     background: var(--gold);
 }
@@ -282,7 +283,7 @@ body {
 .products-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 25px;
     max-width: 1250px;
     margin: auto;
 }
@@ -314,8 +315,8 @@ body {
     left: 0;
     background: linear-gradient(135deg, var(--purple), var(--bright-purple));
     color: white;
-    padding: 10px 22px;
-    font-size: 12px;
+    padding: 8px 18px;
+    font-size: 11px;
     font-weight: bold;
     z-index: 2;
 }
@@ -326,11 +327,11 @@ body {
 ========================================================= */
 
 .product-image {
-    height: 280px;
+    height: 260px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    padding: 22px;
     background: #160d22;
 }
 
@@ -352,43 +353,40 @@ body {
 
 .product-info {
     text-align: center;
-    padding: 22px;
+    padding: 20px;
 }
 
 .product-info h3 {
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     color: white;
 }
 
 .category-description {
     color: var(--gray);
-    margin-bottom: 15px;
-    font-size: 14px;
+    font-size: 13px;
+    margin-bottom: 12px;
 }
 
 
 /* =========================================================
    MODEL LIST
+   BLACK BOX + WHITE TEXT
 ========================================================= */
 
 .model-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 9px;
-    margin: 18px 0 22px;
+    gap: 8px;
+    margin: 16px 0 20px;
 }
 
-.model-list span {
+.model-list span,
+.model-option {
     display: block;
-    padding: 11px 8px;
-
-    /* BLACK BOX */
-    background: #000000;
-
-    /* WHITE TEXT */
-    color: #ffffff;
-
+    padding: 10px 7px;
+    background: #000000 !important;
+    color: #ffffff !important;
     border: 1px solid #333333;
     border-radius: 7px;
     font-size: 11px;
@@ -397,10 +395,11 @@ body {
     transition: 0.25s;
 }
 
-.model-list span:hover {
-    background: #1a1a1a;
+.model-list span:hover,
+.model-option:hover {
+    background: #1a1a1a !important;
+    color: #ffffff !important;
     border-color: var(--bright-purple);
-    color: #ffffff;
     transform: translateY(-2px);
 }
 
@@ -409,15 +408,10 @@ body {
    SELECTED PHONE
 ========================================================= */
 
-.model-list span.selected {
-    background: linear-gradient(
-        135deg,
-        var(--purple),
-        var(--bright-purple)
-    );
-
-    color: white;
-
+.model-list span.selected,
+.model-option.selected {
+    background: #000000 !important;
+    color: #ffffff !important;
     border-color: var(--gold);
 
     box-shadow:
@@ -447,7 +441,7 @@ body {
 
     border-radius: 7px;
 
-    padding: 13px 25px;
+    padding: 12px 22px;
 
     font-size: 13px;
 
@@ -473,46 +467,46 @@ body {
 ========================================================= */
 
 .about-section {
-    padding: 90px 10%;
+    padding: 75px 10%;
     background: #13091f;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 70px;
+    gap: 60px;
     align-items: center;
 }
 
 .about-content h2 {
     font-size: 34px;
     color: var(--bright-purple);
-    margin: 15px 0 25px;
+    margin: 12px 0 20px;
 }
 
 .about-content > p:not(.small-title) {
     color: var(--gray);
     line-height: 1.8;
     font-size: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .about-features {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 17px;
 }
 
 .about-feature {
     display: flex;
-    gap: 20px;
+    gap: 17px;
     align-items: center;
-    padding: 22px;
+    padding: 19px;
     border-left: 4px solid var(--purple);
     background: #211334;
     border-radius: 8px;
 }
 
 .about-feature span {
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
     background: var(--purple);
     color: white;
     border-radius: 50%;
@@ -523,8 +517,8 @@ body {
 }
 
 .about-feature h3 {
-    margin-bottom: 5px;
     font-size: 16px;
+    margin-bottom: 5px;
 }
 
 .about-feature p {
@@ -538,25 +532,26 @@ body {
 ========================================================= */
 
 #contact {
-    padding: 80px 8%;
+    padding: 70px 8%;
     background: #0b0712;
     text-align: center;
 }
 
 #contact h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
+    font-size: 34px;
+    margin-bottom: 12px;
 }
 
 #contact > p {
     color: var(--gray);
-    margin-bottom: 40px;
+    font-size: 14px;
+    margin-bottom: 35px;
 }
 
 .contact-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 18px;
     max-width: 1100px;
     margin: auto;
 }
@@ -565,13 +560,13 @@ body {
     background: #211334;
     border: 1px solid #63339a;
     border-radius: 10px;
-    padding: 25px;
+    padding: 22px;
 }
 
 .contact-item h3 {
     color: var(--bright-purple);
-    margin-bottom: 10px;
     font-size: 16px;
+    margin-bottom: 8px;
 }
 
 .contact-item p {
@@ -590,7 +585,7 @@ body {
     border-bottom: 1px solid #63339a;
     max-width: 1200px;
     margin: auto;
-    min-height: 110px;
+    min-height: 100px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -599,8 +594,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    padding: 20px;
+    gap: 13px;
+    padding: 18px;
     border-right: 1px solid #3b2750;
 }
 
@@ -609,8 +604,8 @@ body {
 }
 
 .trust-icon {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border: 2px solid var(--bright-purple);
     color: var(--bright-purple);
     border-radius: 50%;
@@ -632,7 +627,7 @@ body {
 .footer {
     background: #07040b;
     color: white;
-    padding: 50px 8%;
+    padding: 45px 8%;
     text-align: center;
     border-top: 2px solid var(--purple);
 }
@@ -641,13 +636,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 25px;
+    gap: 13px;
+    margin-bottom: 22px;
 }
 
 .footer-ng {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     border: 2px solid var(--gold);
     border-radius: 12px;
     display: flex;
@@ -663,18 +658,20 @@ body {
 
 .copyright {
     color: #888;
-    margin-bottom: 20px;
+    font-size: 12px;
+    margin-bottom: 18px;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 22px;
 }
 
 .social-links a {
     color: var(--bright-purple);
     text-decoration: none;
+    font-size: 13px;
 }
 
 .social-links a:hover {
@@ -690,8 +687,8 @@ body {
     position: fixed;
     right: 25px;
     bottom: 25px;
-    width: 62px;
-    height: 62px;
+    width: 58px;
+    height: 58px;
     border-radius: 50%;
     background: #25d366;
     color: white;
@@ -699,7 +696,7 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 26px;
+    font-size: 25px;
     border: 3px solid white;
     box-shadow: 0 5px 20px rgba(0,0,0,0.4);
     z-index: 999;
@@ -712,162 +709,11 @@ body {
 
 
 /* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 900px) {
-
-    .top-header {
-        flex-direction: column;
-        gap: 30px;
-        text-align: center;
-    }
-
-    .header-tagline {
-        border-left: none;
-        border-top: 2px solid var(--gold);
-        padding-left: 0;
-        padding-top: 20px;
-    }
-
-    .products-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .about-section {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-info {
-        grid-template-columns: 1fr;
-    }
-
-    .trust-section {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 600px) {
-
-    .top-header {
-        padding: 35px 20px;
-    }
-
-    .logo-icon {
-        width: 100px;
-        height: 100px;
-        font-size: 28px;
-    }
-
-    .logo-text h1 {
-        font-size: 34px;
-    }
-
-    .logo-text h2 {
-        font-size: 25px;
-    }
-
-    .logo-text p {
-        font-size: 9px;
-    }
-
-    .header-tagline p {
-        font-size: 16px;
-    }
-
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-    }
-
-    .nav-links {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .nav-links a {
-        font-size: 11px;
-    }
-
-    .nav-icons {
-        display: none;
-    }
-
-    .hero {
-        flex-direction: column;
-        padding: 60px 25px;
-        text-align: center;
-    }
-
-    .hero-content {
-        width: 100%;
-    }
-
-    .hero-content h2 {
-        font-size: 34px;
-    }
-
-    .hero-image {
-        width: 100%;
-        margin-top: 30px;
-    }
-
-    .products-section {
-        padding: 60px 18px;
-    }
-
-    .products-container {
-        grid-template-columns: 1fr;
-    }
-
-    .product-image {
-        height: 280px;
-    }
-
-    .model-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .about-section {
-        padding: 60px 25px;
-    }
-
-    .trust-section {
-        grid-template-columns: 1fr;
-        margin: 0 20px;
-    }
-
-    .trust-item {
-        border-right: none;
-        border-bottom: 1px solid #3b2750;
-    }
-
-    .trust-item:last-child {
-        border-bottom: none;
-    }
-
-    .whatsapp-button {
-        right: 18px;
-        bottom: 18px;
-        width: 58px;
-        height: 58px;
-    }
-}
-
-
-/* =========================================================
    PAYMENT SECTION
 ========================================================= */
 
 .payment-section {
-    padding: 90px 20px;
+    padding: 75px 20px;
     background:
         radial-gradient(
             circle at center,
@@ -882,27 +728,27 @@ body {
     color: #a855f7;
     font-size: 11px;
     font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 
 .payment-title h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
+    font-size: 34px;
+    margin-bottom: 12px;
 }
 
 .payment-subtitle {
     color: #b8afc4;
-    max-width: 600px;
-    margin: 0 auto 40px;
-    line-height: 1.7;
     font-size: 14px;
+    max-width: 600px;
+    margin: 0 auto 35px;
+    line-height: 1.7;
 }
 
 .payment-card {
     max-width: 550px;
     margin: auto;
-    padding: 35px;
+    padding: 30px;
     background: linear-gradient(
         145deg,
         #211334,
@@ -916,21 +762,21 @@ body {
 }
 
 .payment-icon {
-    width: 65px;
-    height: 65px;
-    margin: 0 auto 20px;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 18px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #7c3aed;
-    font-size: 28px;
+    font-size: 27px;
     border: 2px solid #f5c542;
 }
 
 .payment-card h3 {
     font-size: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 .payment-detail {
@@ -938,8 +784,8 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 17px;
-    margin-bottom: 10px;
+    padding: 15px;
+    margin-bottom: 9px;
     background: #160d22;
     border: 1px solid #63339a;
     border-radius: 8px;
@@ -967,8 +813,8 @@ body {
 .payment-whatsapp-btn {
     width: 100%;
     display: block;
-    padding: 15px;
-    margin-top: 15px;
+    padding: 13px;
+    margin-top: 13px;
     border-radius: 8px;
     font-weight: bold;
     font-size: 13px;
@@ -1007,18 +853,169 @@ body {
     color: #9589a5;
     font-size: 11px;
     line-height: 1.6;
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 
 /* =========================================================
-   MOBILE PAYMENT
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .top-header {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .header-tagline {
+        border-left: none;
+        border-top: 2px solid var(--gold);
+        padding-left: 0;
+        padding-top: 18px;
+    }
+
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
 ========================================================= */
 
 @media (max-width: 600px) {
 
+    .top-header {
+        padding: 30px 20px;
+    }
+
+    .logo-icon {
+        width: 85px;
+        height: 85px;
+        font-size: 27px;
+    }
+
+    .logo-text h1 {
+        font-size: 32px;
+    }
+
+    .logo-text h2 {
+        font-size: 24px;
+    }
+
+    .logo-text p {
+        font-size: 8px;
+    }
+
+    .header-tagline p {
+        font-size: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 17px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+    }
+
+    .nav-icons {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 50px 25px;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h2 {
+        font-size: 34px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .products-section {
+        padding: 50px 18px;
+    }
+
+    .products-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 260px;
+    }
+
+    .model-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-section {
+        padding: 50px 25px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .trust-section {
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+    }
+
+    .trust-item {
+        border-right: none;
+        border-bottom: 1px solid #3b2750;
+    }
+
+    .trust-item:last-child {
+        border-bottom: none;
+    }
+
+    .whatsapp-button {
+        right: 18px;
+        bottom: 18px;
+        width: 55px;
+        height: 55px;
+    }
+
     .payment-section {
-        padding: 65px 18px;
+        padding: 60px 18px;
     }
 
     .payment-title h2 {
@@ -1026,13 +1023,13 @@ body {
     }
 
     .payment-card {
-        padding: 25px 18px;
+        padding: 23px 17px;
     }
 
     .payment-detail {
         flex-direction: column;
         align-items: flex-start;
-        gap: 7px;
+        gap: 6px;
     }
 
     .payment-detail strong {
@@ -1049,26 +1046,4 @@ body {
     .account-number-box strong {
         font-size: 15px;
     }
-}
-
-
-/* =========================================================
-   PHONE / MODEL BUTTONS
-========================================================= */
-
-.model-option {
-    background: #000;
-    color: #fff;
-    border: 1px solid #333;
-}
-
-.model-option:hover {
-    background: #1a1a1a;
-    color: #fff;
-}
-
-.model-option.selected {
-    background: #d4af37;
-    color: #000;
-    border-color: #d4af37;
 }
