@@ -1128,3 +1128,86 @@ body {
 .whatsapp-option:hover {
     transform: translateY(-2px);
 }
+
+/* =========================================================
+   RAM & ROM SELECTION BOXES
+========================================================= */
+
+.storage-option,
+.ram-option,
+.rom-option {
+    background: #000;
+    color: #fff;
+    border: 1px solid #333;
+    padding: 10px 16px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+/* Hover */
+.storage-option:hover,
+.ram-option:hover,
+.rom-option:hover {
+    background: #222;
+    color: #fff;
+}
+
+/* Selected */
+.storage-option.selected,
+.ram-option.selected,
+.rom-option.selected {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+/* SOCIAL MEDIA ICONS */
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px) scale(1.08);
+}
+
+.social-links i {
+    font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    .social-links {
+        gap: 14px;
+    }
+
+    .social-links a {
+        width: 42px;
+        height: 42px;
+    }
+
+    .social-links i {
+        font-size: 26px;
+    }
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
