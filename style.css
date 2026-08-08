@@ -1047,3 +1047,84 @@ body {
         font-size: 15px;
     }
 }
+
+/* =========================================================
+   WHATSAPP CHOICE POPUP
+========================================================= */
+
+.whatsapp-choice {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 99999;
+}
+
+.whatsapp-choice-box {
+    width: 100%;
+    max-width: 380px;
+    background: linear-gradient(
+        145deg,
+        #211334,
+        #32174d
+    );
+    border: 1px solid #a855f7;
+    border-radius: 18px;
+    padding: 28px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.whatsapp-choice-box h3 {
+    color: white;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.whatsapp-choice-box p {
+    color: #b8afc4;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+.close-whatsapp-choice {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    background: transparent;
+    border: none;
+    color: #b8afc4;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.whatsapp-option {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid white;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.whatsapp-option.messenger {
+    background: #25d366;
+}
+
+.whatsapp-option.business {
+    background: #7c3aed;
+    border-color: #f5c542;
+}
+
+.whatsapp-option:hover {
+    transform: translateY(-2px);
+}
